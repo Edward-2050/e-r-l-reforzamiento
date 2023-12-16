@@ -1,0 +1,8 @@
+# Ignora la carpeta .idea
+.idea
+
+# Ignora la carpeta __pycache__
+__pycache__
+
+# Ignora la base de datos db.sqlite3
+db.sqlite

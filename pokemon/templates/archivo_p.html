@@ -1,0 +1,12 @@
+{% extends 'base_generic.html' %}
+<title>{% block title %} html de pokemon{% endblock %}</title>
+{% block content %}
+<p>¡¡hola Pythonista, la app <b>Pokemon</b> está funcionando correctamente!!</p>
+{% if data.generacion == 'primera' %}
+    <p>{{ data.nombre }} es de primera generación</p>
+{% else %}
+    <p>{{ data.nombre }} no es de primera generación</p>
+{% endif %}
+{% endblock %}
+
+

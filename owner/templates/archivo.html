@@ -1,0 +1,13 @@
+{% extends 'base_generic.html' %}
+<time>{% block title %} html de owner{% endblock %}</time>
+
+{% block content %}
+<p>¡¡hola Pythonista, la app <b>Owner</b> está funcionando correctamente!!</p>
+
+{% if data.edad  > 18 %}
+    <p>{{data.nombre}} es mayor de edad</p>
+{% else %}
+    <p>{{data.nombre}} es menor de edad</p>
+{% endif %}
+{% endblock %}
+

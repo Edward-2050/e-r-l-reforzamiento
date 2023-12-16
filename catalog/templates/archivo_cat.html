@@ -1,0 +1,11 @@
+{% extends 'base_generic.html' %}
+<title>{% block title %}html de catalog{% endblock %}</title>
+
+{% block content %}
+<p>¡¡hola Pythonista, la app <b>Catalog</b> está funcionando correctamente!!</p>
+{% if data.tipo == 'Fuego' %}
+    <p>{{ data.nombre}} es de tipo fuego</p>
+{% else %}
+    <p>{{ data.nombre}} no es de tipo fuego</p>
+{% endif %}
+{% endblock %}
